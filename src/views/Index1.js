@@ -24,7 +24,7 @@ function Index1() {
   const [jumlahPemakai, setjumlahPemakai] = useState();
 
   useEffect(() => {
-    const urlPropinsi = "http://127.0.0.1:3123/get/propinsi";
+    const urlPropinsi = "https://brilife-api-app.herokuapp.com/get/propinsi";
     fetch(urlPropinsi)
       .then(res => res.json())
       .then(
@@ -49,7 +49,7 @@ function Index1() {
           setError(error);
         }
       )
-      const urlkontrasepsi = "http://127.0.0.1:3123/get/kontrasepsi";
+      const urlkontrasepsi = "https://brilife-api-app.herokuapp.com/get/kontrasepsi";
     fetch(urlkontrasepsi)
       .then(res => res.json())
       .then(
@@ -82,7 +82,7 @@ function Index1() {
   }
 
   function postToAPI() {
-    return fetch('http://127.0.0.1:3123/post/entry', {
+    return fetch('https://brilife-api-app.herokuapp.com/post/entry', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ 

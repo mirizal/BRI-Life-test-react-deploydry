@@ -37,7 +37,7 @@ function Index2() {
     const classes = useStyles();
 
     useEffect(() => {
-        const urlpemakaikontrasepsi = "http://127.0.0.1:3123/get/pemakaikontrasepsi";
+        const urlpemakaikontrasepsi = "https://brilife-api-app.herokuapp.com/get/pemakaikontrasepsi";
         fetch(urlpemakaikontrasepsi)
         .then(res => res.json())
         .then(
